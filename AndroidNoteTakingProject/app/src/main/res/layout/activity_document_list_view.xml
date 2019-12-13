@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DocumentListView">
+
+
+        android:layout_width="405dp"
+        android:layout_height="653dp"
+        tools:context=".SavedDocumentsActivity"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="78dp">
+
+    <!--50dp horizontal space between grid items-->
+
+
+    <RelativeLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="tabian.com.listadapter.MainActivity">
+
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="390dp"
+            android:layout_height="660dp"
+            android:layout_below="@+id/newbtn"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_marginBottom="5dp" />
+
+
+        <ImageButton
+            android:id="@+id/newbtn"
+            android:layout_width="67dp"
+            android:layout_height="65dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="6dp"
+            android:src="@drawable/ic_note_add" />
+
+        <ImageButton
+            android:id="@+id/settingbtn"
+            android:layout_width="67dp"
+            android:layout_height="65dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="0dp"
+            android:layout_toStartOf="@+id/newbtn"
+            android:src="@drawable/ic_settings" />
+
+        <Button
+            android:id="@+id/logoutBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginLeft="268dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:text="Logout" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

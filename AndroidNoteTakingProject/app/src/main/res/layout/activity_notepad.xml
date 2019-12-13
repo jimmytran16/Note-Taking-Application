@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".notepad">
+
+
+    <EditText
+        android:id="@+id/noteEdit"
+        android:layout_width="403dp"
+        android:layout_height="586dp"
+        android:layout_marginStart="4dp"
+        android:ems="10"
+        android:gravity="left|top"
+        android:inputType="textMultiLine|textPersonName"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listBtn" />
+
+
+    <ImageButton
+        android:id="@+id/backBtn"
+        android:layout_width="82dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="4dp"
+        android:src="@drawable/ic_back_arrow"
+        app:layout_constraintEnd_toStartOf="@+id/sharedBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/listBtn"
+        android:layout_width="82dp"
+        android:layout_height="58dp"
+        android:src="@drawable/ic_folder"
+        app:layout_constraintEnd_toStartOf="@+id/deletebtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/saveBtn"
+        android:layout_width="82dp"
+        android:layout_height="58dp"
+        android:src="@drawable/ic_save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/deletebtn"
+        android:layout_width="82dp"
+        android:layout_height="58dp"
+        android:src="@drawable/ic_delete"
+        app:layout_constraintEnd_toStartOf="@+id/saveBtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/sharedBtn"
+        android:layout_width="82dp"
+        android:layout_height="58dp"
+        android:src="@drawable/ic_share"
+        app:layout_constraintEnd_toStartOf="@+id/listBtn"
+        app:layout_constraintTop_toTopOf="@+id/deletebtn" />
+</androidx.constraintlayout.widget.ConstraintLayout>
